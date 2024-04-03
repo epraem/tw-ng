@@ -1,6 +1,6 @@
 :host {
   .parent {
-    @apply container mx-auto min-h-screen flex flex-col items-center justify-center md:flex-row md:justify-between;
+    @apply container mx-auto min-h-screen flex gap-8 flex-col items-center justify-center md:flex-row md:justify-between;
   }
 
   .defaults {
@@ -10,6 +10,6 @@
   .cards,
   .buttons,
   .inputs {
-    @apply w-full flex flex-col items-center mb-8 md:mb-0 md:w-1/3 px-5;
+    @apply w-full flex flex-col items-center mb-8 md:mb-0 md:w-1/3;
   }
 }
