@@ -1,9 +1,15 @@
 :host {
   .parent {
-    @apply h-screen flex flex-col w-full items-center justify-center;
+    @apply container mx-auto h-screen flex items-center justify-between;
   }
 
   .defaults {
     @apply flex flex-col gap-2 justify-center;
+  }
+
+  .cards,
+  .buttons,
+  .inputs {
+    @apply w-full flex justify-center;
   }
 }
