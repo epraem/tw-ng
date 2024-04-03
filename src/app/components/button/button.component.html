@@ -1,0 +1,42 @@
+<button
+  [ngClass]="'bg-' + color"
+  [style.border]="borderColor"
+  [style.color]="textColor"
+  [style.background]="buttonBg"
+  class="flex items-center justify-center gap-3"
+>
+  <ng-container *ngIf="icon == 'left' || icon == 'both'; else elseBlock">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="3"
+      stroke="currentColor"
+      class="w-4 h-4"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M15.75 19.5 8.25 12l7.5-7.5"
+      />
+    </svg>
+  </ng-container>
+  {{ name }}
+  <ng-container *ngIf="icon == 'right' || icon == 'both'; else elseBlock">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="3"
+      stroke="currentColor"
+      class="w-4 h-4"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="m8.25 4.5 7.5 7.5-7.5 7.5"
+      />
+    </svg>
+  </ng-container>
+  <ng-template #elseBlock></ng-template>
+</button>

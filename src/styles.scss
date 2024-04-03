@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  //Primary color
+  --primary-color: #8ec641;
+  --primary-hover: #6b9630;
+  --primary-active: #587d2a;
+  //Secondary color
+  --secondary-color: #ae4bbf;
+  --secondary-hover: #771c8a;
+  --secondary-active: #4c1052;
+}
