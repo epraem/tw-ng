@@ -1,0 +1,42 @@
+<app-centered
+  ><div class="buttons">
+    <h1 class="text-3xl font-bold underline mb-10">Button Layout</h1>
+    <div
+      class="flex flex-col items-center gap-10 sm:flex-col sm:items-center lg:flex-row justify-between"
+    >
+      <div class="defaults">
+        <h2 class="text-xl font-bold underline">Buttons!</h2>
+        <!-- Tailwind Button -->
+        <app-button color="primary" [name]="'Tailwind Only'"></app-button>
+        <!-- Dynamic Button / No Hover FX-->
+        <app-button [buttonBg]="'#333'" [name]="'Dynamic Button'"></app-button>
+        <!-- Dynamic Tailwind Button / Hover FX-->
+        <app-button
+          color="secondary"
+          [borderColor]="'2px solid black'"
+          [name]="'Mekus Both'"
+        ></app-button>
+      </div>
+      <div class="defaults">
+        <h2 class="text-xl font-bold underline">With Icons!</h2>
+        <div class="defaults">
+          <app-button
+            color="warning"
+            [name]="'Icon Right'"
+            [icon]="'right'"
+          ></app-button>
+          <app-button
+            color="secondary"
+            [name]="'Icon Left'"
+            [icon]="'left'"
+          ></app-button>
+          <app-button
+            [buttonBg]="'#2323f1'"
+            [name]="'Icon Both'"
+            [icon]="'both'"
+          ></app-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</app-centered>

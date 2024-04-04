@@ -1,20 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ButtonComponent } from './components/button/button.component';
 import { CommonModule } from '@angular/common';
-import { CardComponent } from './components/card/card.component';
-import { InputComponent } from './components/input/input.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [
-    RouterOutlet,
-    CommonModule,
-    ButtonComponent,
-    CardComponent,
-    InputComponent,
-  ],
+  imports: [RouterOutlet, CommonModule, NavBarComponent], // Add RouterModule and RouterLink to imports
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

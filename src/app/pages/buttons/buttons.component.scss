@@ -1,0 +1,9 @@
+:host {
+  .defaults {
+    @apply flex flex-col gap-2 justify-center;
+  }
+
+  .buttons {
+    @apply w-full flex flex-col items-center;
+  }
+}
