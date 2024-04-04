@@ -1,0 +1,12 @@
+.card {
+  @apply block xl:min-w-[275px] p-6 rounded-2xl;
+  box-shadow: 5px 5px 10px #edeeea, -5px -5px 10px #ffffff;
+}
+
+.card-title {
+  @apply text-[16px] font-bold tracking-tight;
+}
+
+.card-text {
+  @apply font-normal text-[12px];
+}

@@ -1,0 +1,16 @@
+// tailwind.scss
+.bg-warning {
+  @apply bg-red-500 hover:bg-red-700;
+}
+
+.bg-primary {
+  @apply bg-[--primary-color] hover:bg-[--primary-hover] active:bg-[--primary-active];
+}
+
+.bg-secondary {
+  @apply bg-[--secondary-color] hover:bg-[--secondary-hover] active:bg-[--secondary-active];
+}
+
+.bg-dwhite {
+  @apply bg-[--white-color] hover:bg-[--white-hover] active:bg-[--white-active];
+}

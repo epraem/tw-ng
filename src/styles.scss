@@ -2,11 +2,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "tailwind.scss";
 
 body {
   font-family: "Nunito", sans-serif;
-  background: #dddddd;
-  color: #333;
+  background: #f9faf6;
+  color: #091635;
 }
 
 :root {
@@ -18,4 +19,12 @@ body {
   --secondary-color: #ae4bbf;
   --secondary-hover: #771c8a;
   --secondary-active: #4c1052;
+  //White color
+  --white-color: #f9faf6;
+  --white-hover: #f7f8f3;
+  --white-active: #f5f6f0;
+  //Black color
+  --black-color: #333;
+  --black-hover: #222;
+  --black-active: #111;
 }

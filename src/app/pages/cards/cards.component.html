@@ -1,1 +1,18 @@
-<app-centered><app-card></app-card> </app-centered>
+<app-centered>
+  <div
+    class="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 py-[100px]"
+  >
+    <app-card
+      *ngFor="let data of cardData"
+      [color]="data.color"
+      [withTitle]="data.withTitle"
+      [withDescription]="data.withDescription"
+      [cardTitle]="data.cardTitle"
+      [cardDescription]="data.cardDescription"
+      [withIcon]="data.withIcon"
+      class="w-full"
+    >
+      <div [innerHtml]="data.content"></div>
+    </app-card>
+  </div>
+</app-centered>
