@@ -1,5 +1,5 @@
 :host {
   .centered {
-    @apply container mx-auto min-h-screen flex flex-col gap-10 justify-center items-center;
+    @apply container mx-auto max-w-7xl px-2  py-[100px] sm:px-6 lg:px-8 justify-center items-center;
   }
 }

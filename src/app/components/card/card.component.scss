@@ -1,5 +1,5 @@
 .card {
-  @apply block xl:min-w-[275px] p-6 rounded-2xl;
+  @apply flex flex-col justify-between xl:min-w-[275px] p-6 rounded-2xl h-full;
   box-shadow: 5px 5px 10px #edeeea, -5px -5px 10px #ffffff;
 }
 
