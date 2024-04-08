@@ -18,3 +18,26 @@
     </app-card>
   </div>
 </app-centered>
+
+<!-- 12 Columns -->
+<!-- <app-centered>
+  <div class="grid grid-cols-4 md:grid-cols-12 auto-rows-[198px] gap-4">
+    <app-card
+      *ngFor="let data of cardData; let i = index"
+      [color]="data.color"
+      [withTitle]="data.withTitle"
+      [withDescription]="data.withDescription"
+      [cardTitle]="data.cardTitle"
+      [cardDescription]="data.cardDescription"
+      [withIcon]="data.withIcon"
+      class="w-full col-span-4 sm:col-span-2 md:col-span-3"
+      [ngClass]="{
+        'md:col-span-6': i === 0 || i === 4 || i === 5 || i === 6,
+        'md:row-span-2': i === 2,
+        
+      }"
+    >
+      <div [innerHtml]="data.content"></div>
+    </app-card>
+  </div>
+</app-centered> -->
